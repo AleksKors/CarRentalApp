@@ -9,6 +9,8 @@ import FrontPage from './components/frontpage';
 import CarView from './components/carView';
 import Login from './components/login';
 import Signup from './components/signup';
+import CartPage from './components/cartPage';
+import CheckoutPage from './components/checkoutPage';
 
 const Stack = createStackNavigator();
 
@@ -62,6 +64,7 @@ export default function App() {
             <>
               <Stack.Screen name="FrontPage" component={FrontPage} options={{ headerShown: false }} />
               <Stack.Screen name="CarView" component={CarView} options={{ headerShown: false }} />
+              <Stack.Screen name="CheckoutPage" component={CheckoutPage} options={{ headerShown: false }} />
             </>
           ) : (
             <>
